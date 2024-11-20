@@ -1,0 +1,9 @@
+<form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+  <input type="email" formControlName="email" />
+  <input type="password" formControlName="password" />
+  <button type="submit">Submit</button>
+</form>
+
+<h2>Profile Form</h2>
+<p>Email: {{ profileForm.value.email }}</p>
+<p>Name: {{ profileForm.value.password }}</p>
